@@ -1,0 +1,53 @@
+{
+  "name": "bb-plugin-link-tooltips",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.49",
+    "bbPluginSdk": ">=0.6.132"
+  },
+  "bb": {
+    "name": "Link Tooltips",
+    "description": "Show the full URL or file path when hovering a link in BB.",
+    "branding": {
+      "icon": "Link"
+    },
+    "server": "./server.ts",
+    "app": "./app.tsx"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.132",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "jsdom": "^26.0.0",
+    "typescript": "^5.7.0"
+  },
+  "scripts": {
+    "build": "bb plugin build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tooltips.test.ts"
+  },
+  "description": "Show the full URL or file path when hovering a link in BB.",
+  "license": "MIT",
+  "author": {
+    "name": "Sergey Zhukov",
+    "email": "sergeyzh@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyZh/bb-plugin-link-tooltips.git"
+  },
+  "homepage": "https://github.com/SergeyZh/bb-plugin-link-tooltips#readme",
+  "bugs": {
+    "url": "https://github.com/SergeyZh/bb-plugin-link-tooltips/issues"
+  },
+  "keywords": [
+    "bb",
+    "bb-plugin",
+    "tooltips",
+    "links",
+    "file-paths"
+  ]
+}
